@@ -1,3 +1,3 @@
-function menuCross(x) {
-  x.classList.toggle("change");
+function menuCross(divEl) {
+  divEl.classList.toggle("change");
 }
