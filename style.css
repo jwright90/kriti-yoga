@@ -45,10 +45,19 @@
 }
 
 body {
-  padding: 0 20px;
   font-family: var(--sans);
   background-color: var(--white);
   color: var(--dark-grey);
+  
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+
+}
+
+.page-container {
+  max-width: 960px;
+  width: 100%;
 }
 
 h1, h2 {
@@ -61,6 +70,17 @@ h1 {
 
 h2 {
   font-size: 36px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-child(odd) {
+  background-color: var(--linen);
+  border-radius: 15px;
 }
 
 /* Navigation */
@@ -171,11 +191,15 @@ h2 {
   box-shadow: 3px 3px var(--dark-grey);
 }
 
-/* Next Section */
+/* About section */
 
-.next-section {
-  background-color: var(--linen);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+.about-section {
+
 }
+
+/* Classes section */
+
+.classes-section {
+}
+
+/* Contact section */
