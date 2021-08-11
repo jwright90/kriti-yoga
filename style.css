@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --white: #FEFCFB;
+  --linen: #EBE3DD;
+  --brown: #a28772;
+  --yellow: #f8e16c;
+  --light-green: #00C49A;
+  --red: #ca054d;
+  --blue-green: #156064;
+  --dark-grey: #322214;
+/* https://coolors.co/a28772-156064-00C49A-f8e16c-ca054d */
+
+  --serif: 'Spectral', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --sans: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  
+  --hero-height: calc(100vh - 9px);
+}
+
+::selection {
+  background: var(--brown);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--brown);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+body {
+  padding: 0 20px;
+  font-family: var(--sans);
+  background-color: var(--white);
+  color: var(--dark-grey);
+}
+
+h1, h2 {
+  font-family: var(--serif);
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* Navigation */
+.menu-container {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .menu-button {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+/* Hero */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: var(--hero-height);
+  width: 100%;
+}
+
+.hero-btn-container {
+  height: 100%; /* takes up all space available at bottom of page */
+}
+
+.yoga-circle-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  background: url('/assets/woman-yoga.jpg') no-repeat;
+  background-size: cover;
+  background-position: -85px -90px;
+  border-radius: 50%;
+  filter: brightness(0.95);
+}
+
+.strapline {
+  position: relative;
+  top: -15px;
+  padding: 5px 0;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-style: italic;
+
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.hero-btn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--serif);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 32px;
+
+  display: inline-block;
+  position: relative;
+  top: 25px;
+
+  background-color: var(--blue-green);
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 5px 5px var(--dark-grey);
+
+
+}
+
+/* Next Section */
+
+.next-section {
+  background-color: var(--linen);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
