@@ -78,11 +78,6 @@ section {
   justify-content: center;
 }
 
-section:nth-child(odd) {
-  background-color: var(--linen);
-  border-radius: 15px;
-}
-
 /* Navigation */
 .menu-container {
   display: none;
