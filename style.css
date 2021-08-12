@@ -15,7 +15,7 @@
   --sans: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
   
-  --hero-height: calc(100vh - 9px);
+  --hero-height: calc(100vh);
 
   --mandala-opacity: 0.4;
 }
@@ -92,7 +92,7 @@ h2:after {
 }
 
 section {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
