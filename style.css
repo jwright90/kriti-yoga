@@ -16,8 +16,6 @@
   
   
   --hero-height: calc(100vh);
-
-  --mandala-opacity: 0.4;
 }
 
 ::selection {
@@ -92,7 +90,7 @@ h2:after {
 }
 
 section {
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,9 +100,9 @@ section {
 .mandala-half, .mandala-half-flip {
   background: url('/assets/mandala-half.png') no-repeat;
   background-size: cover;
+  background-color: var(--white);
   height: 125px;
   width: 250px;
-  filter: grayscale(0.3) contrast(135%) opacity(var(--mandala-opacity));
 }
 
 .mandala-half {
