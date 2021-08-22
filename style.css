@@ -148,6 +148,14 @@ section {
   box-shadow: 5px 5px var(--dark-grey);
 }
 
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0 0 30px;
+  text-align: center;
+}
+
 /* Navigation */
 @media only screen and (min-width: 768px) {
 
@@ -310,6 +318,10 @@ section {
 }
 
 /* About section */
+.about-section {
+  margin-bottom: 40px;
+}
+
 .about-section h3 {
   font-size: 24px;
   padding: 20px 0;
@@ -322,21 +334,53 @@ section {
 
 
 /* Classes section */
+.classes-container {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--blue-green);
+  padding: 30px 10px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px var(--blue-green);
+}
 
+.day {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blue-green);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 10px;
+  padding-bottom: 15px;
+  
+}
 
+.yoga-class {
+  width: 100%;
+}
+
+.yoga-class .yoga-type {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
 
 /* Contact section */
 
-.grid-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
+.contact-section .form-container {
+  width: 80%;
 }
 
 form .form-group {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
 form input {
