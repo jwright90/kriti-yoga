@@ -156,7 +156,7 @@ section {
   text-align: center;
 }
 
-/* Navigation */
+/* Navigation & Media Queries */
 @media only screen and (min-width: 768px) {
 
   .mobile-nav {
@@ -187,7 +187,6 @@ section {
     color: var(--white);
   }
 }
-
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -228,7 +227,6 @@ section {
 }
 
 @media only screen and (max-width: 380px) {
-
   h1 {
     font-size: 1.5rem;
   }
@@ -242,10 +240,34 @@ section {
   background: url('/assets/mandala-half.png') no-repeat;
   background-size: cover;
   background-color: var(--white);
-  height: 65px;
-  width: 135px;
+  height: 90px;
+  width: 185px;
   }
 
+}
+
+@media only screen and (max-width: 300px) {
+  .hero-container {
+    min-height: 400px;
+  }
+
+  .yoga-circle-img {
+    height: 200px !important;
+    width: 200px !important;
+    background-position: -55px -70px !important;
+  }
+
+  .strapline {
+  font-size: 14px !important;
+  }
+
+  .classes-container, .yoga-class, .yoga-type {
+    font-size: 13px !important;
+  }
+
+  .day {
+    font-size: 16px !important;
+  }
 }
 
 /* Hero */
