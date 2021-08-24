@@ -26,6 +26,10 @@
   color: white;
 }
 
+.white {
+  color: var(--white);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -214,6 +218,7 @@ section {
 
   .mobile-nav {
     display: none;
+    z-index: 2;
   }
 
   .navbar {
@@ -254,11 +259,13 @@ section {
     font-weight: 600;
   }
 
-  .menu-button {
+  .mobile-nav {
     position: absolute;
     display: inline-block;
     cursor: pointer;
-    z-index: 2 !important;
+    z-index: 2;
+    top: 20px;
+    right: 60px;
   }
 
   .bar1, .bar2, .bar3 {
@@ -267,6 +274,10 @@ section {
     background-color: #333;
     margin: 6px 0;
     transition: all 0.4s ease;
+  }
+
+  .bar1.change, .bar2.change, .bar3.change {
+    background-color: white;
   }
 
   .change .bar1 {
@@ -424,7 +435,7 @@ section {
 
 .about-section .about-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   row-gap: 80px;
 }

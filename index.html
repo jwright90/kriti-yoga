@@ -28,8 +28,8 @@
       </div>
 
       <div class="mobile-nav">
-        <div class="pr-15">Menu</div>
-        <div class="menu-button" onclick="addChangeClass(this)">
+        <div class="mobile-menu-text pr-15">Menu</div>
+        <div id="menu-button" class="menu-button" onclick="addChangeClass()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -41,10 +41,10 @@
       <div>
         <div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a onclick="addChangeClass()" href="#home">Home</a></li>
+            <li><a onclick="addChangeClass()" href="#about">About</a></li>
+            <li><a onclick="addChangeClass()" href="#classes">Classes</a></li>
+            <li><a onclick="addChangeClass()" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
