@@ -7,7 +7,7 @@ function addChangeClass() {
   mobileOverlay.classList.toggle("change");
 
   mobileMenuText = document.querySelector('.mobile-menu-text');
-  mobileMenuText.classList.toggle("white");
+  mobileMenuText.classList.toggle("blue-green");
 
   let i;
   for (i = 1; i < 4; i++) {

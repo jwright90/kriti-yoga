@@ -30,6 +30,10 @@
   color: var(--white);
 }
 
+.blue-green {
+  color: var(--blue-green);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -146,7 +150,6 @@ section {
   letter-spacing: 2px;
   text-decoration: none;
   text-align: center;
-
   cursor: pointer;
   background-color: var(--blue-green);
   border: none;
@@ -175,7 +178,6 @@ section {
   align-items: center;
   width: 100%;
   height: 100%;
-  opacity: 0;
   -webkit-transition: opacity 0.4s ease;
   -moz-transition: opacity 0.4s ease;
   -o-transition: opacity 0.4s ease;
@@ -187,8 +189,8 @@ section {
   top: 0;
   left: 0;
   display: flex;
-  background-color: var(--dark-grey);
-  opacity: 0.9;
+  background-color: var(--white);
+  opacity: 0.95;
   -webkit-transition: opacity 0.4s ease;
   -moz-transition: opacity 0.4s ease;
   -o-transition: opacity 0.4s ease;
@@ -217,10 +219,11 @@ section {
 }
 
 .mobile-overlay.change > div a {
-  color: white;
+  color: var(--blue-green);
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
+
 }
 
 /* Navigation & Media Queries */
@@ -287,7 +290,7 @@ section {
   }
 
   .bar1.change, .bar2.change, .bar3.change {
-    background-color: white;
+    background-color: var(--blue-green);
   }
 
   .change .bar1 {
