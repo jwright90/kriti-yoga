@@ -9,10 +9,13 @@ function addChangeClass() {
   mobileMenuText = document.querySelector('.mobile-menu-text');
   mobileMenuText.classList.toggle("blue-green");
 
+  body = document.getElementsByTagName('body').item(0);
+  body.classList.toggle("change");
+  console.log(body);
+
   let i;
   for (i = 1; i < 4; i++) {
     let bar = document.getElementsByClassName(`bar${i}`);
-    console.log(bar);
     bar.item(0).classList.toggle("change");
   }
 

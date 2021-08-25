@@ -44,13 +44,14 @@ html, body {
   font-family: var(--sans);
   background-color: var(--white);
   color: var(--dark-grey);
-  
   display: flex;
   justify-content: center;
   padding: 0 20px;
-
   line-height: 1.4rem;
+}
 
+body.change {
+  overflow: hidden !important;
 }
 
 /* Utility */
@@ -170,34 +171,33 @@ section {
 /* Menu Wrap */
 .mobile-overlay {
   position: fixed;
-  top: -300vh;
-  left: -300vw;
-  z-index: 1;
+  z-index: -1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  -o-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.mobile-overlay > div {
+  visibility: hidden;
 }
 
 .mobile-overlay.change {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   display: flex;
   background-color: var(--white);
   opacity: 0.95;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  -o-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.5s ease;
 }
 
 .mobile-overlay.change > div {
+  visibility: visible;
   width: 300vw;
   height: 300vh;
   display: flex;
@@ -307,6 +307,15 @@ section {
 
   .about-section .about-content {
   grid-template-columns: 1fr 1fr !important;
+  }
+
+  .contact-section .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section .form-container {
+    padding-bottom: 30px;
   }
 }
 
@@ -529,6 +538,17 @@ section {
 .contact-section .contact-group {
   padding: 20px 0;
   font-size: 1.2rem;
+}
+
+.contact-section a {
+  margin-right: 25px;
+  color: var(--dark-grey);
+  transition: 0.5s linear;
+}
+
+.contact-section a:hover {
+  color: var(--blue-green);
+  transition: 0.3s ease;
 }
 
 .form-container h4 {
