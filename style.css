@@ -123,6 +123,8 @@ section {
   align-items: center;
 }
 
+
+
 .mandala-half, .mandala-half-flip {
   background: url('/assets/mandala-half.png') no-repeat;
   background-size: cover;
@@ -493,12 +495,18 @@ section {
   display: grid;
   justify-content: center;
   align-items: center;
-  text-align: center;
   grid-template-columns: 1fr;
   border: 1px solid var(--blue-green);
   padding: 30px 10px 10px;
   border-radius: 15px;
   box-shadow: 5px 5px var(--dark-grey);
+}
+
+.classes-section h4,
+.classes-section p {
+  width: 100%;
+  max-width: 890px;
+  text-align: left;
 }
 
 .day {
