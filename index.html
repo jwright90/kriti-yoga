@@ -14,12 +14,10 @@
 </head>
 
 <body>
-
-  <!-- Navbar -->
-
-
   <div id="home" class="page-container">
-    <div class="menu-container mr-20 mt-20">
+
+    <!-- Navbar -->
+    <div class="menu-container">
 
       <div class="navbar">
         <ul>
@@ -30,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="mobile-nav">
+      <div id="mobile-nav" class="mobile-nav">
         <div class="mobile-menu-text pr-15">Menu</div>
         <div id="menu-button" class="menu-button" onclick="addChangeClass()">
           <div class="bar1"></div>
@@ -39,6 +37,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Mobile overlay -->
 
     <div id="mobile-overlay" class="mobile-overlay">
       <div>
@@ -226,18 +226,14 @@
             <input type="submit" value="Submit" class="btn">
           </form>
         </div>
-
       </div>
-
     </section>
-
-
-
   </div>
 
   <footer>
     <p>Yoga photo(s) found at: <a href='https://www.freepik.com/photos/sports'>www.freepik.com</a></p>
   </footer>
+
   <script src="index.js"></script>
 </body>
 
