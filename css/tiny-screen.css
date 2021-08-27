@@ -1,0 +1,75 @@
+@media only screen and (max-width: 300px) {
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .yoga-circle-img {
+    height: 200px !important;
+    width: 200px !important;
+    background-position: -55px -70px !important;
+  }
+
+  .strapline {
+  font-size: 14px !important;
+  }
+
+  .classes-container, .yoga-class, .yoga-type {
+    font-size: 13px !important;
+  }
+
+  .day {
+    font-size: 16px !important;
+  }
+
+  .hero-btn {
+    font-size: 12px !important;
+    height: 50px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+
+  }
+
+  .mobile-nav {
+    right: 35px !important;
+  }
+
+  .back-to-top {
+    height: 33px !important;
+    width: 33px !important;
+  }
+
+  .contact-group i {
+    padding: 5px;
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  section .mandala-half,
+  section .mandala-half-flip {
+  background: url('../assets/mandala-half.png') no-repeat;
+  background-size: cover;
+  background-color: var(--white);
+  height: 90px;
+  width: 185px;
+  }
+
+  .about-section .about-content {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr !important;
+  }
+
+  .about-section .about-content .about-img-2 {
+  grid-row: 4 !important;
+  }
+
+}

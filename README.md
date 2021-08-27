@@ -5,9 +5,14 @@ Author: Jason Wright
 Project Start: 11/08/2021  
 Project End: TBD  
 
+## Notes @ 27.08.2021
+### To dos
+* Add accordion FAQs
+* Add pricing cards
+* Complete footer (three columns)
+
 ## Notes @ 25.08.2021
 * Additional features to add: smooth scroll, navbar sticky & link background changes as user scrolls down, back to top arrow as user scrolls down, loading page (pre-load images, some of the text / images animate in as user scrolls down.
-
 * Down the line, advanced features I want to work on are: authentication, a booking system and CMS system. 
 * I could take this in a million directions, but next goal will be to create a similar website with improved hero page, about section and add a blog feature.
 
