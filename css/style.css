@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('./loader.css');
 
 :root {
   --white: #FEFCFB;
@@ -8,6 +9,7 @@
   --light-green: #00C49A;
   --red: #ca054d;
   --blue-green: #156064;
+  --blue-link: #5EB1BF;
   --dark-grey: #322214;
 /* https://coolors.co/a28772-156064-00C49A-f8e16c-ca054d */
 
@@ -522,10 +524,11 @@ section {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
-  border: 1px solid var(--blue-green);
+
   padding: 30px 10px 10px;
+  border: 1px solid var(--blue-green);
   border-radius: 15px;
-  box-shadow: 5px 5px var(--dark-grey);
+  box-shadow: 2px 2px var(--dark-grey);
 }
 
 .classes-section h4,
@@ -533,6 +536,14 @@ section {
   width: 100%;
   max-width: 890px;
   text-align: left;
+}
+
+.classes-section h4 {
+  padding-bottom: 20px;
+}
+
+.classes-section p {
+  padding-bottom: 40px;
 }
 
 .day {
@@ -581,7 +592,7 @@ section {
 }
 
 .contact-section a:hover {
-  color: var(--blue-green);
+  color: var(--light-green);
   transition: 0.3s ease;
 }
 

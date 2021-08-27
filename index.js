@@ -22,3 +22,7 @@ function addChangeClass() {
   }
 
 }
+
+setTimeout(function () {
+  $('.loader-bg').fadeToggle();
+}, 250);
