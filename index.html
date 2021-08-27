@@ -18,18 +18,27 @@
   <!-- Preloader -->
 
   <div class="loader-bg">
-    <div class="loader"></div>
+    <a class="loader" href=>
   </div>
+  </div>
+
+  <!-- Back To Top -->
+
+  <a href="#home">
+    <div class="back-to-top shadow">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </a>
 
   <header>
     <!-- Navbar -->
 
-    <div class="menu-container">
+    <div id="home" class="menu-container">
 
       <div class="navbar">
         <div class="navbar-contents">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#classes">Classes</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -38,7 +47,7 @@
       </div>
 
       <div id="mobile-nav" class="mobile-nav">
-        <div class="mobile-menu-text pr-15">Menu</div>
+        <div class="mobile-menu-text">Menu</div>
         <div id="menu-button" class="menu-button" onclick="addChangeClass()">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -65,7 +74,7 @@
   </header>
 
   <!-- Landing Page -->
-  <div id="home" class="page-container">
+  <div class="page-container">
     <section class="hero-section">
       <div class="hero-title">
         <h1>Kriti Yoga</h1>
@@ -81,7 +90,7 @@
         </div>
       </div>
       <div class="hero-btn-container">
-        <a href="#contact" class="hero-btn">Book a class</a>
+        <a href="#contact" class="hero-btn shadow">Book a class</a>
       </div>
     </section>
 
@@ -242,7 +251,7 @@
             <div class="form-group ">
               <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
             </div>
-            <input type="submit" value="Submit" class="btn">
+            <input type="submit" value="Submit" class="btn shadow">
           </form>
         </div>
       </div>
@@ -256,8 +265,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/loader-fade.js"></script>
+  <script src="./js/fade-loader.js"></script>
   <script src="./js/smooth-scroll.js"></script>
+  <script src="./js/back-to-top.js"></script>
   <script src="./js/index.js"></script>
 
 </body>

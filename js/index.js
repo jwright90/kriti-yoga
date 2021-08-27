@@ -1,5 +1,5 @@
+// Mobile: Menu Toggle
 function addChangeClass() {
-
   menuButton = document.getElementById('menu-button');
   menuButton.classList.toggle("change");
 
@@ -20,6 +20,4 @@ function addChangeClass() {
     let bar = document.getElementsByClassName(`bar${i}`);
     bar.item(0).classList.toggle("change");
   }
-
 }
-
