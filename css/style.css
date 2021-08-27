@@ -302,10 +302,6 @@ section {
     right: 60px;
   }
 
-  .mobile-nav.change {
-    right: 77px;
-  }
-
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -500,18 +496,17 @@ section {
 }
 
 .about-section .about-img-1 {
-  background: url('./assets/about-img-1.jpg') no-repeat center center/cover;
+  background: url('../assets/about-img-1.jpg') no-repeat center center/cover;
   height: 100%;
   width: 100%;
   border-radius: 15px;
 }
 
 .about-section .about-img-2 {
-  background: url('./assets/about-img-2.jpg') no-repeat center center/cover;
+  background: url('../assets/about-img-2.jpg') no-repeat center center/cover;
   height: 100%;
   width: 100%;
   border-radius: 15px;
-
 }
 
 
