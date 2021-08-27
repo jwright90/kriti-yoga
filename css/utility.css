@@ -10,6 +10,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 10px 0;
 }
 
 /* Horizontal Lines */
@@ -88,6 +89,7 @@ section {
   transform: rotate(180deg);
   position: relative;
   top: -25px;
+  margin-bottom: 15px;
 }
 
 .row {
