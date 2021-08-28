@@ -5,6 +5,14 @@ Author: Jason Wright
 Project Start: 11/08/2021  
 Project End: TBD  
 
+## Notes @ 28.08.2021
+* Finished pricing cards
+
+### Next Up
+* Accordion: https://www.w3schools.com/howto/howto_js_accordion.asp
+* Complete footer
+* Have contact form send email on submit
+
 ## Notes @ 27.08.2021
 ### To dos
 * Add accordion FAQs

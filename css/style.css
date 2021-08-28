@@ -405,7 +405,7 @@ body.change {
 .classes-container {
   width: 100%;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   padding: 30px 10px 10px;
 
   display: grid;
@@ -471,6 +471,10 @@ body.change {
   font-size: 1rem;
   padding: 15px;
   color: var(--blue-green);
+}
+
+.classes-section .row.prices {
+  margin-bottom: 35px;
 }
 
 .classes-section .row .price-card .price-header {
