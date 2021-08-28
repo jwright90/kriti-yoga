@@ -2,6 +2,7 @@
 @import url('./loader.css');
 @import url('./utility.css');
 @import url('./tiny-screen.css');
+@import url('./accordion.css');
 
 :root {
   --white: #FEFCFB;
