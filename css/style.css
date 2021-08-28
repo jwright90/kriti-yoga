@@ -101,6 +101,7 @@ body.change {
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 0 15px;
 }
 
 /* Menu Wrap */
@@ -255,7 +256,22 @@ body.change {
   }
 
   .about-section .about-content {
-  grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr !important;
+  }
+
+  .about-section .about-content .about-img-2 {
+  grid-row: 4 !important;
+  }
+
+  .classes-section .row.prices {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .classes-section .row.prices .price-card {
+    width: 100%;
+    margin: 20px 0;
   }
 
   .contact-section .grid-container {
@@ -296,8 +312,12 @@ body.change {
   background: url('/assets/woman-yoga.jpg') no-repeat;
   background-size: cover;
   background-position: -85px -90px;
-  border-radius: 50%;
   filter: brightness(0.95);
+  border-radius: 250px;
+  border: 3px solid var(--dark-grey);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .strapline {
@@ -358,7 +378,7 @@ body.change {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  row-gap: 80px;
+  row-gap: 50px;
 }
 
 .about-section .about-content .about-img-2 {
@@ -386,26 +406,26 @@ body.change {
   width: 100%;
   max-width: 900px;
   margin-bottom: 40px;
+  padding: 30px 10px 10px;
+
   display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr;
 
-  padding: 30px 10px 10px;
-  border: 1px solid var(--blue-green);
   border-radius: 15px;
-  box-shadow: 3px 3px 3px var(--dark-grey);
+  border: 1px solid var(--blue-green);
+
 }
 
 .classes-section h4,
 .classes-section p {
   width: 100%;
   max-width: 890px;
-  text-align: left;
 }
 
 .classes-section h4 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .classes-section p {
@@ -421,7 +441,6 @@ body.change {
   text-decoration-style: dotted;
   text-underline-offset: 10px;
   padding-bottom: 15px;
-  
 }
 
 .yoga-class {
@@ -432,6 +451,30 @@ body.change {
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 16px;
+}
+
+/* Prices */
+
+.classes-section .row .price-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 15px;
+  border: 1px solid var(--blue-green);
+  border-radius: 15px;
+}
+
+.price-card h5 {
+  font-size: 1rem;
+  padding: 15px;
+  color: var(--blue-green);
+}
+
+.classes-section .row .price-card .price-header {
+  height: 50%;
 }
 
 /* Contact section */
