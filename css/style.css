@@ -63,6 +63,7 @@ body.change {
 
 /* Back To Top */
 .back-to-top {
+  z-index: 999;
   position: fixed;
   bottom: -100px;
   right: 75px;
@@ -88,7 +89,6 @@ body.change {
 .back-to-top.did-scroll {
   bottom: 65px;
   right: 75px;
-
   transition: all 0.7s ease;
 }
 
