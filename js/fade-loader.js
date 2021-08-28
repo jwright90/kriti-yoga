@@ -1,8 +1,14 @@
 // Fade Loader
+setTimeout(function () {
+  $('.loader').addClass('show');
+}, 1000);
+
+
 function fadeLoader() {
   setTimeout(function () {
     $('.loader-bg').fadeToggle();
-  }, 250);
+  }, 150);
 }
 
-fadeLoader();
+window.addEventListener('load', fadeLoader, false);
+
