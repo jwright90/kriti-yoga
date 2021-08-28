@@ -224,7 +224,7 @@ body.change {
     cursor: pointer;
     z-index: 2;
     top: 20px;
-    right: 75px;
+    right: 10vw;
   }
 
   .bar1, .bar2, .bar3 {
@@ -296,6 +296,7 @@ body.change {
   width: 100%;
   text-align: center;
   line-height: 1.8rem;
+  margin-top: 15px;
 }
 
 .hero-btn-container {
