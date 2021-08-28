@@ -6,7 +6,11 @@ Project Start: 11/08/2021
 Project End: TBD  
 
 ## Notes @ 28.08.2021
-* Finished pricing cards
+* Finished pricing cards, form submissions (via formspree), accordion FAQs
+* Decided to leave footer as is with attributions
+
+### Website Complete!
+This is a basic website that has enough functionality for a yoga teacher stating out. I will use this as a base point to add a blog, authentication, class booking and online payment system.
 
 ### Next Up
 * Accordion: https://www.w3schools.com/howto/howto_js_accordion.asp
